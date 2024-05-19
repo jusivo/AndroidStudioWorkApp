@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notifications_">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:background="@color/cardview_dark_background"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:text="Notifications"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/transparent_background"
+        android:contentDescription="arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="670dp"
+        android:layout_marginEnd="1dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/toolbarmenucontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/message_btn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="30dp"
+                android:padding="3dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/transparent_background"
+                android:clickable="true"
+                android:contentDescription="notification"
+                android:scaleType="fitXY"
+                android:src="@drawable/baseline_message_25" />
+
+            <ImageButton
+                android:id="@+id/search_button"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="0dp"
+                android:padding="3dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/transparent_background"
+                android:clickable="true"
+                android:contentDescription="message"
+                android:scaleType="fitXY"
+                android:src="@drawable/baseline_search_24" />
+
+            <ImageButton
+                android:id="@+id/notifications_btn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="0.7"
+                android:padding="3dp"
+                android:background="@drawable/transparent_background"
+                android:clickable="true"
+                android:contentDescription="message"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_notifications_25" />
+
+            <ImageButton
+                android:id="@+id/add_aJob_btn"
+                android:layout_width="1dp"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/transparent_background"
+                android:clickable="true"
+                android:contentDescription="add_jb"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_add_24" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "347909752400",
+    "project_id": "messagingfrbase2",
+    "storage_bucket": "messagingfrbase2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347909752400:android:b1079ff6025b747402b355",
+        "android_client_info": {
+          "package_name": "com.example.bandymas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCek041fHKmPUnaeNyCB28pTGS2Uzhzuo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

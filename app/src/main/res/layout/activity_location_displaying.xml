@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    tools:context=".google_maps_ac.location_displaying" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:padding="5dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/job_descript_txt"
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="48dp"
+            android:hint="Type address" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

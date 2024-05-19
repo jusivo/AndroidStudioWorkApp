@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Bandymas" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Bandymas" parent="Base.Theme.Bandymas" />
+
+    <style name="ruda_sp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/zalia</item>
+    </style>
+
+    <style name="Theme.Bandymas.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Bandymas.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Bandymas.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
